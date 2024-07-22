@@ -12,4 +12,4 @@ $env->load();
 $connect = (new DBConnect())->getConnection();
 
 // test code
-echo getenv('OKTAAUDIENCE');
+// echo $_ENV['DB_DATABASE'];
