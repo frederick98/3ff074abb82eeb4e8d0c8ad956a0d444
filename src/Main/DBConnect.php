@@ -10,7 +10,6 @@ class DBConnect{
         $db   = $_ENV['DB_DATABASE'];
         $user = $_ENV['DB_USERNAME'];
         $pass = $_ENV['DB_PASSWORD'];
-
         try {
             $this->connect = new \PDO("pgsql:host=$host;port=$port;dbname=$db", $user, $pass);
         } catch (\PDOException $e) {
